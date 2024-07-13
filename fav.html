@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="fav">Favorites</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to shared stylesheet -->
+</head>
+<body>
+    <header id="favSec">
+        <h1 id="favText">Favorites</h1>
+        <button id="backToMain">Back to Main</button> <!-- Button to navigate back to main page -->
+    </header>
+    <div id="favoritesContainer"></div> <!-- Container for displaying favorite cocktails -->
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Cocktail Image">
+            <h2 id="modalName"></h2>
+            <h3>Ingredients</h3>
+            <ul id="modalIngredients"></ul>
+            <h3>Steps</h3>
+            <p id="modalInstructions"></p>
+        </div>
+    </div>
+
+    <script src="fav.js"></script> <!-- Link to favorites script file -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="cocktail_logo.png" alt="Logo" class="header-logo">
+        <h1 id="cocktail">The Cocktail Studio</h1>
+        <input type="text" id="searchBox" placeholder="Type a letter & wait" maxlength="1">
+        <button id="favoritesButton">Favorites</button>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </header>
+    <div id="resultsContainer"></div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Cocktail Image">
+            <h2 id="modalName"></h2>
+            <h3>Ingredients</h3>
+            <ul id="modalIngredients"></ul>
+            <h3>Steps</h3>
+            <p id="modalInstructions"></p>
+            <button id="saveToFavorites">Save to Favorites</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
